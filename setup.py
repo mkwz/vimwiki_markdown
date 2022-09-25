@@ -25,7 +25,10 @@ setup(
     entry_points={
         "console_scripts": [["vimwiki_markdown = vimwiki_markdown:main"]]
     },
-    install_requires=["markdown", "Pygments"],
+    install_requires=["markdown",
+                      "Pygments",
+                      "git+https://github.com/mitya57/python-markdown-math.git",
+                     ],
     extras_require={},
     classifiers=[
         "Development Status :: 4 - Beta",
