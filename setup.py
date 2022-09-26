@@ -27,7 +27,7 @@ setup(
     },
     install_requires=["markdown",
                       "Pygments",
-                      "git+https://github.com/mitya57/python-markdown-math.git",
+                      "python-markdown-math @ git+https://github.com/mitya57/python-markdown-math.git",
                      ],
     extras_require={},
     classifiers=[
