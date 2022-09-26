@@ -112,7 +112,7 @@ def main():
     # Setup markdown parser
     md = markdown.Markdown(
         extensions=extension_names,
-        extension_configs=extensions,
+        extension_configs={"mdx_math": {"use_gitlab_delimiters": True}},
     )
     md.inlinePatterns.deregister("link")
     md.inlinePatterns.register(
